@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profilePic from "images/me.jpeg";  // check extension
 
 const About = () => {
   return (
