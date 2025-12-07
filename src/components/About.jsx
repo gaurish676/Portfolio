@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import profilePic from "images/me.jpeg";  // check extension
+import profilePic from "src/images/me.jpeg";  // check extension
 
 const About = () => {
   return (
@@ -43,11 +43,13 @@ const About = () => {
               <div className="w-full h-full rounded-full overflow-hidden">
 
                   {/* Placeholder for profile image - replace with actual image */}
-                  <img
-                    src="./images/me.jpeg"
-                    alt="Gaurish Bangera"
-                    className="w-full h-full object-cover"
-                    />
+                  <div className="flex justify-center items-center">
+              <img
+                  src={profilePic}
+                  alt="Gaurish Bangera"
+                  className="w-48 h-48 rounded-full object-cover"
+                />
+                  </div>
 
                 </div>
               </div>
