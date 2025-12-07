@@ -43,7 +43,7 @@ const About = () => {
 
                   {/* Placeholder for profile image - replace with actual image */}
                   <img
-                    src="/src/images/me.jpeg"
+                    src="./images/me.jpeg"
                     alt="Gaurish Bangera"
                     className="w-full h-full object-cover"
                     />
