@@ -1,0 +1,28 @@
+{
+  "Programming Languages": [
+    { "name": "JavaScript", "level": 90 },
+    { "name": "TypeScript", "level": 85 },
+    { "name": "Python", "level": 80 },
+    { "name": "Java", "level": 75 },
+    { "name": "C++", "level": 70 }
+  ],
+  "Tools/Frameworks": [
+    { "name": "React", "level": 95 },
+    { "name": "Node.js", "level": 85 },
+    { "name": "Express", "level": 80 },
+    { "name": "MongoDB", "level": 75 },
+    { "name": "PostgreSQL", "level": 70 },
+    { "name": "Docker", "level": 75 },
+    { "name": "AWS", "level": 70 },
+    { "name": "Git", "level": 90 }
+  ],
+  "Projects/Experience Skills": [
+    { "name": "Full-Stack Development", "level": 90 },
+    { "name": "RESTful APIs", "level": 85 },
+    { "name": "Microservices", "level": 75 },
+    { "name": "CI/CD", "level": 70 },
+    { "name": "Agile/Scrum", "level": 85 },
+    { "name": "System Design", "level": 80 }
+  ]
+}
+

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Online Quiz platform",
+    "description": "A simple solution with user authentication, and admin dashboard. Built with React, Node.js, and MongoDB.",
+    "techStack": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    "codeUrl": "https://github.com/gaurish676/onlinequiz-",
+    "demoUrl": "https://onlinequiz-demo.example.com"
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    "techStack": ["React", "TypeScript", "Socket.io", "PostgreSQL", "TailwindCSS"],
+    "codeUrl": "https://github.com/username/task-manager",
+    "demoUrl": "https://taskmanager-demo.example.com"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics using multiple API integrations.",
+    "techStack": ["React", "JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
+    "codeUrl": "https://github.com/username/weather-dashboard",
+    "demoUrl": "https://weather-demo.example.com"
+  }
+]
+
