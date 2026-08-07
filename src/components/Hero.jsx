@@ -116,15 +116,18 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center w-full sm:w-auto mb-10"
           >
-            <motion.button
-              onClick={handleDownloadResume}
+            <motion.a
+              href="/Gaurish_Bangera_New_Resume.pdf"
+              download="Gaurish_Bangera_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.98 }}
               className="w-full sm:w-auto px-7 py-3.5 bg-gradient-to-r from-[#00df9a] to-[#00b8d4] text-black font-bold rounded-xl flex items-center justify-center gap-2.5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,223,154,0.4)] cursor-pointer text-sm md:text-base"
             >
               <FaDownload size={15} />
               Download Resume
-            </motion.button>
+            </motion.a>
             
             <motion.a
               href="#projects"
