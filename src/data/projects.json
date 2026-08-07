@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Intelligent Contact Management System",
-    "description": "A full-stack contact management system featuring REST APIs for CRUD operations, soft deletes, data restoration, and multi-query search optimization.",
-    "category": "Full-Stack",
-    "techStack": ["Go", "React", "PostgreSQL", "TypeScript", "REST API"],
-    "codeUrl": "https://github.com/gaurish676/contact-management",
-    "demoUrl": "https://contacts.gaurish.dev"
+    "title": "CodSoft Data Science Internship Portfolio",
+    "description": "Comprehensive suite of 5 machine learning projects including Titanic Survival Prediction, Movie Rating Regression, Iris Classification, Sales Forecasting, and Credit Card Fraud Detection with SMOTE.",
+    "category": "Data Science",
+    "techStack": ["Python", "Scikit-Learn", "Pandas", "SMOTE", "Matplotlib", "Seaborn"],
+    "codeUrl": "https://github.com/gaurish676/CODSOFT",
+    "demoUrl": "https://github.com/gaurish676/CODSOFT"
   },
   {
     "id": 2,
@@ -15,24 +15,24 @@
     "category": "Full-Stack",
     "techStack": ["JavaScript", "MySQL", "XAMPP", "HTML5", "CSS3"],
     "codeUrl": "https://github.com/gaurish676/onlinequiz-",
-    "demoUrl": "https://quiz.gaurish.dev"
+    "demoUrl": "https://github.com/gaurish676/onlinequiz-"
   },
   {
     "id": 3,
-    "title": "Staffroom Finding Website",
+    "title": "Staffroom Finding & Resource Website",
     "description": "A locator system built for NMAMIT students to find lecturer staffroom offices, incorporating database storage for academic reference papers and PYQs.",
     "category": "Web Apps",
     "techStack": ["VS Code", "MySQL", "JavaScript", "HTML5", "CSS3"],
-    "codeUrl": "https://github.com/gaurish676/staffroom-finder",
-    "demoUrl": "https://staffrooms.gaurish.dev"
+    "codeUrl": "https://github.com/gaurish676/Portfolio",
+    "demoUrl": "https://github.com/gaurish676/Portfolio"
   },
   {
     "id": 4,
-    "title": "Compiler for Hypothetical Language",
+    "title": "Compiler for Custom Language",
     "description": "An SLR(1) parser and execution engine for a custom mini programming language, including lexical analysis, LR(0) compilation grids, and block execution.",
     "category": "Systems",
     "techStack": ["Python", "Compiler Design", "Algorithms", "Parser Table"],
-    "codeUrl": "https://github.com/gaurish676/mini-compiler",
-    "demoUrl": "https://compiler.gaurish.dev"
+    "codeUrl": "https://github.com/gaurish676/Portfolio",
+    "demoUrl": "https://github.com/gaurish676/Portfolio"
   }
 ]
