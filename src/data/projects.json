@@ -1,27 +1,38 @@
 [
   {
     "id": 1,
-    "title": "Online Quiz platform",
-    "description": "A simple solution with user authentication, and admin dashboard. Built with React, Node.js, and MongoDB.",
-    "techStack": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    "codeUrl": "https://github.com/gaurish676/onlinequiz-",
-    "demoUrl": "https://onlinequiz-demo.example.com"
+    "title": "Intelligent Contact Management System",
+    "description": "A full-stack contact management system featuring REST APIs for CRUD operations, soft deletes, data restoration, and multi-query search optimization.",
+    "category": "Full-Stack",
+    "techStack": ["Go", "React", "PostgreSQL", "TypeScript", "REST API"],
+    "codeUrl": "https://github.com/gaurish676/contact-management",
+    "demoUrl": "https://contacts.gaurish.dev"
   },
   {
     "id": 2,
-    "title": "Task Management App",
-    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    "techStack": ["React", "TypeScript", "Socket.io", "PostgreSQL", "TailwindCSS"],
-    "codeUrl": "https://github.com/username/task-manager",
-    "demoUrl": "https://taskmanager-demo.example.com"
+    "title": "Online Quiz Platform",
+    "description": "An interactive web portal for quiz testing with robust MySQL backend storage. Built-in statistics aggregation for question performance and score analysis.",
+    "category": "Full-Stack",
+    "techStack": ["JavaScript", "MySQL", "XAMPP", "HTML5", "CSS3"],
+    "codeUrl": "https://github.com/gaurish676/onlinequiz-",
+    "demoUrl": "https://quiz.gaurish.dev"
   },
   {
     "id": 3,
-    "title": "Weather Dashboard",
-    "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics using multiple API integrations.",
-    "techStack": ["React", "JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
-    "codeUrl": "https://github.com/username/weather-dashboard",
-    "demoUrl": "https://weather-demo.example.com"
+    "title": "Staffroom Finding Website",
+    "description": "A locator system built for NMAMIT students to find lecturer staffroom offices, incorporating database storage for academic reference papers and PYQs.",
+    "category": "Web Apps",
+    "techStack": ["VS Code", "MySQL", "JavaScript", "HTML5", "CSS3"],
+    "codeUrl": "https://github.com/gaurish676/staffroom-finder",
+    "demoUrl": "https://staffrooms.gaurish.dev"
+  },
+  {
+    "id": 4,
+    "title": "Compiler for Hypothetical Language",
+    "description": "An SLR(1) parser and execution engine for a custom mini programming language, including lexical analysis, LR(0) compilation grids, and block execution.",
+    "category": "Systems",
+    "techStack": ["Python", "Compiler Design", "Algorithms", "Parser Table"],
+    "codeUrl": "https://github.com/gaurish676/mini-compiler",
+    "demoUrl": "https://compiler.gaurish.dev"
   }
 ]
-
