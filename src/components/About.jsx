@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGraduationCap, FaAward, FaUser, FaMapMarkerAlt, FaCode, FaBriefcase, FaCertificate } from 'react-icons/fa';
+import { FaGraduationCap, FaAward, FaUser, FaMapMarkerAlt, FaCode, FaBriefcase, FaCertificate, FaFileAlt } from 'react-icons/fa';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('profile');
@@ -26,6 +26,7 @@ const About = () => {
       title: "Research Intern — RGB-T Vision Portal",
       organization: "NITK (National Institute of Technology Karnataka)",
       period: "2025",
+      offerLetterUrl: "/offer_letters/NITK_Offer_Letter.pdf",
       points: [
         "Designed and deployed the RGB-T Vision Portal (Live Portal), an interactive web platform presenting thermal-visible computer vision research methodologies and datasets.",
         "Integrated PyTorch research documentation, interactive simulations, and multi-modal vision datasets to streamline project outcomes for academic collaborators.",
@@ -36,6 +37,7 @@ const About = () => {
       title: "Web Development Intern",
       organization: "NativeSoftTech",
       period: "June 2025 – July 2025",
+      offerLetterUrl: "/offer_letters/NativeSoftTech_Offer_Letter.pdf",
       points: [
         "Developed dynamic, responsive web interfaces and reusable user components adhering to modern HTML5, CSS3, and JavaScript standards.",
         "Collaborated on client-facing frontend features, optimizing page layout responsiveness, cross-browser compatibility, and overall site performance.",
@@ -46,6 +48,7 @@ const About = () => {
       title: "Data Science Virtual Intern",
       organization: "CodSoft",
       period: "June 2025 – July 2025",
+      offerLetterUrl: "/offer_letters/CodSoft_Offer_Letter.pdf",
       points: [
         "Conducted data preprocessing, exploratory data analysis (EDA), and feature engineering on structured datasets.",
         "Implemented predictive machine learning models to analyze data patterns and evaluate algorithm performance using statistical metrics."
@@ -230,9 +233,22 @@ const About = () => {
                     {internshipData.map((intern, idx) => (
                       <div key={idx} className="relative pl-6 border-l-2 border-white/5 hover:border-[#00df9a]/40 transition-colors duration-300 group">
                         <div className="absolute -left-[6px] top-1.5 w-[10px] h-[10px] rounded-full bg-[#00df9a] group-hover:scale-125 transition-transform duration-300" />
-                        <span className="text-xs font-semibold text-[#00df9a] tracking-wider uppercase bg-[#00df9a]/5 border border-[#00df9a]/20 px-2 py-0.5 rounded">
-                          {intern.period}
-                        </span>
+                        <div className="flex items-center gap-3 mb-2 flex-wrap">
+                          <span className="text-xs font-semibold text-[#00df9a] tracking-wider uppercase bg-[#00df9a]/5 border border-[#00df9a]/20 px-2 py-0.5 rounded">
+                            {intern.period}
+                          </span>
+                          {intern.offerLetterUrl && (
+                            <a
+                              href={intern.offerLetterUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-xs font-semibold bg-white/5 border border-white/10 hover:border-[#00df9a]/40 text-gray-300 hover:text-[#00df9a] transition-all duration-300 cursor-pointer"
+                            >
+                              <FaFileAlt size={11} className="text-[#00df9a]" />
+                              Offer Letter
+                            </a>
+                          )}
+                        </div>
                         <h4 className="text-xl font-bold text-white mt-2 mb-1 group-hover:text-[#00df9a] transition-colors duration-300">
                           {intern.title}
                         </h4>
