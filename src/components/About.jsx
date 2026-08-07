@@ -1,56 +1,82 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGraduationCap, FaAward, FaUser, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
-import profilePic from '../images/me.jpeg';
+import { FaGraduationCap, FaAward, FaUser, FaMapMarkerAlt, FaCode, FaBriefcase, FaCertificate } from 'react-icons/fa';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('profile');
 
   const tabs = [
     { id: 'profile', label: 'Profile', icon: FaUser },
+    { id: 'internships', label: 'Internships', icon: FaBriefcase },
     { id: 'education', label: 'Education', icon: FaGraduationCap },
-    { id: 'experience', label: 'Activities & Achievements', icon: FaAward }
+    { id: 'achievements', label: 'Certifications & Achievements', icon: FaCertificate }
   ];
 
   const educationData = [
     {
       degree: "Bachelor of Technology (B.Tech), Computer Science & Engineering",
       institution: "NMAM Institute of Technology (NMAMIT), Nitte, Karkala",
-      period: "2023 - 2027 (Expected)",
-      description: "Focusing on Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Database Systems, Web Development, and Compiler Design. Passionate about engineering innovative software systems."
-    },
-    {
-      degree: "Pre-University Course (Class XII) - Science",
-      institution: "State Board Pre-University College, Karnataka",
-      period: "2021 - 2023",
-      description: "Studied Mathematics, Physics, Chemistry, and Computer Science."
+      period: "Expected May 2027",
+      description: "Focusing on Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Database Systems, Full-Stack Web Development, and Compiler Design. Certified in Microsoft Azure AI Fundamentals with hands-on research and software engineering experience."
     }
   ];
 
-  const activitiesData = [
+  const internshipData = [
     {
-      title: "Microsoft Certified: Azure AI Fundamentals",
+      title: "Research Intern — RGB-T Vision Portal",
+      organization: "NITK (National Institute of Technology Karnataka)",
+      period: "2025",
+      points: [
+        "Designed and deployed the RGB-T Vision Portal (Live Portal), an interactive web platform presenting thermal-visible computer vision research methodologies and datasets.",
+        "Integrated PyTorch research documentation, interactive simulations, and multi-modal vision datasets to streamline project outcomes for academic collaborators.",
+        "Engineered responsive UI components utilizing modern web standards to visualize complex thermal-RGB fusion experimental pipelines."
+      ]
+    },
+    {
+      title: "Web Development Intern",
+      organization: "NativeSoftTech",
+      period: "June 2025 – July 2025",
+      points: [
+        "Developed dynamic, responsive web interfaces and reusable user components adhering to modern HTML5, CSS3, and JavaScript standards.",
+        "Collaborated on client-facing frontend features, optimizing page layout responsiveness, cross-browser compatibility, and overall site performance.",
+        "Refactored frontend code modules to enhance software maintainability and user engagement metrics."
+      ]
+    },
+    {
+      title: "Data Science Virtual Intern",
+      organization: "CodSoft",
+      period: "June 2025 – July 2025",
+      points: [
+        "Conducted data preprocessing, exploratory data analysis (EDA), and feature engineering on structured datasets.",
+        "Implemented predictive machine learning models to analyze data patterns and evaluate algorithm performance using statistical metrics."
+      ]
+    }
+  ];
+
+  const achievementsData = [
+    {
+      title: "Microsoft Certified: Azure AI Fundamentals (AI-900)",
       organization: "Microsoft Credentials",
-      period: "2024",
-      description: "Completed professional certification validating foundational knowledge of machine learning and artificial intelligence concepts in Microsoft Azure."
+      period: "Certified",
+      description: "Validated foundational knowledge of machine learning and artificial intelligence concepts in Microsoft Azure."
     },
     {
-      title: "Appreciation Certificate from Tudar Club",
+      title: "C++ Professional Certification & Azure Webinars",
+      organization: "Infosys Springboard & Microsoft Azure Studio",
+      period: "Completed",
+      description: "Earned C++ Professional Certification from Infosys Springboard and attended Microsoft Azure Studio technical webinars."
+    },
+    {
+      title: "Competitive Programming & Problem Solving",
+      organization: "LeetCode & TakeUForward (TUF)",
+      period: "Active",
+      description: "Active problem solver focusing on Data Structures & Algorithms (DSA), building strong fundamentals in software optimization."
+    },
+    {
+      title: "Leadership & Community Recognition",
       organization: "Tudar Club - Tululipi Event",
-      period: "2023",
-      description: "Recognized with an appreciation certificate for outstanding participation and contribution to the Tululipi regional cultural and script event."
-    },
-    {
-      title: "Infosys C++ & Microsoft Azure Webinars",
-      organization: "Professional Technical Training",
-      period: "2023 - Present",
-      description: "Completed professional C++ certification from Infosys and actively participated in Azure Studio webinars to explore cloud computing services."
-    },
-    {
-      title: "Ethical Hacking & Sustainability Workshops",
-      organization: "Nestle & Tech Events",
-      period: "2023 - Present",
-      description: "Participated in Nestle event for E-Learning sustainability and attended specialized training seminars on Ethical Hacking."
+      period: "Awarded",
+      description: "Awarded Certificate of Appreciation by Tudar Club for organizing and executing the Tululipi event."
     }
   ];
 
@@ -69,7 +95,7 @@ const About = () => {
             About <span className="gradient-text font-extrabold">Me</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            Get to know my journey, academic background, and professional pursuits.
+            Get to know my journey, academic background, research, and internship experience.
           </p>
         </motion.div>
 
@@ -95,21 +121,21 @@ const About = () => {
               </div>
               
               <div className="glass-panel p-4.5 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-[#00b8d4]/30 transition-all duration-300 group">
-                <span className="text-gray-500 font-mono text-[10px] tracking-wider uppercase block mb-1">02 / PROBLEM SOLVED</span>
-                <span className="text-3xl font-extrabold text-[#00b8d4] block mb-1 group-hover:scale-105 transition-transform duration-300">300+</span>
-                <span className="text-xs text-gray-400 font-light leading-snug">LeetCode / DSA</span>
+                <span className="text-gray-500 font-mono text-[10px] tracking-wider uppercase block mb-1">02 / INTERNSHIPS</span>
+                <span className="text-3xl font-extrabold text-[#00b8d4] block mb-1 group-hover:scale-105 transition-transform duration-300">3</span>
+                <span className="text-xs text-gray-400 font-light leading-snug">NITK, Web, DS</span>
               </div>
               
               <div className="glass-panel p-4.5 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-[#3b82f6]/30 transition-all duration-300 group">
-                <span className="text-gray-500 font-mono text-[10px] tracking-wider uppercase block mb-1">03 / EXPERIENCE</span>
-                <span className="text-3xl font-extrabold text-[#3b82f6] block mb-1 group-hover:scale-105 transition-transform duration-300">3rd Yr</span>
-                <span className="text-xs text-gray-400 font-light leading-snug">Undergrad CSE</span>
+                <span className="text-gray-500 font-mono text-[10px] tracking-wider uppercase block mb-1">03 / CERTIFICATION</span>
+                <span className="text-xl font-extrabold text-[#3b82f6] block py-1 group-hover:scale-105 transition-transform duration-300">Azure AI</span>
+                <span className="text-xs text-gray-400 font-light leading-snug">AI-900 Fundamentals</span>
               </div>
               
               <div className="glass-panel p-4.5 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-[#a855f7]/30 transition-all duration-300 group">
-                <span className="text-gray-500 font-mono text-[10px] tracking-wider uppercase block mb-1">04 / FOCUS AREA</span>
-                <span className="text-xl font-extrabold text-[#a855f7] block py-1.5 leading-none group-hover:scale-105 transition-transform duration-300">Full-Stack</span>
-                <span className="text-xs text-gray-400 font-light leading-snug">Systems Eng.</span>
+                <span className="text-gray-500 font-mono text-[10px] tracking-wider uppercase block mb-1">04 / DEGREE</span>
+                <span className="text-xl font-extrabold text-[#a855f7] block py-1 leading-none group-hover:scale-105 transition-transform duration-300">B.Tech</span>
+                <span className="text-xs text-gray-400 font-light leading-snug">CSE @ NMAMIT</span>
               </div>
             </div>
 
@@ -121,11 +147,11 @@ const About = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-300 text-sm">
                 <FaGraduationCap className="text-[#00df9a] flex-shrink-0" size={18} />
-                <span className="text-left font-light">B.Tech CSE Undergrad at NMAMIT</span>
+                <span className="text-left font-light">B.Tech CSE Undergrad at NMAMIT (May 2027)</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300 text-sm">
                 <FaCode className="text-[#00df9a] flex-shrink-0" />
-                <span className="text-left font-light">Software & Systems Development</span>
+                <span className="text-left font-light">Local LLMs, Full-Stack & AI Engineering</span>
               </div>
             </div>
           </motion.div>
@@ -146,7 +172,7 @@ const About = () => {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`flex items-center gap-2 px-5 py-3 text-sm font-medium transition-all duration-300 relative border-b-2 whitespace-nowrap ${
+                    className={`flex items-center gap-2 px-5 py-3 text-sm font-medium transition-all duration-300 relative border-b-2 whitespace-nowrap cursor-pointer ${
                       activeTab === tab.id
                         ? 'text-[#00df9a] border-[#00df9a]'
                         : 'text-gray-400 border-transparent hover:text-white'
@@ -172,23 +198,54 @@ const About = () => {
                     className="space-y-6 text-gray-300 leading-relaxed font-light text-base md:text-lg"
                   >
                     <p>
-                      Hello! I'm <span className="text-[#00df9a] font-semibold">Gaurish Bangera</span>, a third-year Computer Science & Engineering student with a deep passion for building high-performance web systems and digital products.
+                      Hello! I'm <span className="text-[#00df9a] font-semibold">Gaurish Bangera</span>, a Computer Science & Engineering undergraduate at NMAMIT with strong expertise in Data Structures, Algorithms, Full-Stack Web Development, and AI Engineering.
                     </p>
                     <p>
-                      I specialize in JavaScript, TypeScript, and Python environments, creating full-stack architectures using React, Node.js, and modern database engines. I enjoy taking abstract business problems and translating them into robust, clean, and developer-friendly codebases.
+                      I have hands-on experience developing <span className="text-white font-medium">Local LLM privacy analyzers</span>, custom database engines in <span className="text-white font-medium">C++</span>, full-stack <span className="text-white font-medium">Go/React</span> web platforms, and deep learning vision systems.
                     </p>
                     <p>
-                      Through my coursework at NMAMIT and my own practical software experiments, I continuously work to refine my understanding of system design, performance bottlenecks, and scalable architectures.
+                      Certified in <span className="text-[#00df9a] font-medium">Microsoft Azure AI Fundamentals</span> with proven research experience at NITK Surathkal and industry web development & data science internships.
                     </p>
                     
                     {/* Strengths Badges */}
                     <div className="pt-4 flex flex-wrap gap-2.5">
-                      {["Full-Stack Systems", "Object-Oriented Design", "Database Modeling", "API Integration", "Creative Problem Solving"].map((tag) => (
+                      {["Local LLMs (Ollama)", "Full-Stack Web (React/Go)", "PyTorch & Computer Vision", "Custom C++ Engines", "Azure AI Certified", "DSA & Algorithms"].map((tag) => (
                         <span key={tag} className="px-3.5 py-1.5 rounded-full bg-[#00df9a]/5 border border-[#00df9a]/15 text-[#00df9a] text-xs font-semibold tracking-wider uppercase">
                           {tag}
                         </span>
                       ))}
                     </div>
+                  </motion.div>
+                )}
+
+                {activeTab === 'internships' && (
+                  <motion.div
+                    key="internships"
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -15 }}
+                    transition={{ duration: 0.4 }}
+                    className="space-y-8"
+                  >
+                    {internshipData.map((intern, idx) => (
+                      <div key={idx} className="relative pl-6 border-l-2 border-white/5 hover:border-[#00df9a]/40 transition-colors duration-300 group">
+                        <div className="absolute -left-[6px] top-1.5 w-[10px] h-[10px] rounded-full bg-[#00df9a] group-hover:scale-125 transition-transform duration-300" />
+                        <span className="text-xs font-semibold text-[#00df9a] tracking-wider uppercase bg-[#00df9a]/5 border border-[#00df9a]/20 px-2 py-0.5 rounded">
+                          {intern.period}
+                        </span>
+                        <h4 className="text-xl font-bold text-white mt-2 mb-1 group-hover:text-[#00df9a] transition-colors duration-300">
+                          {intern.title}
+                        </h4>
+                        <p className="text-sm font-medium text-[#00b8d4] mb-3">
+                          {intern.organization}
+                        </p>
+                        <ul className="space-y-2 text-gray-400 font-light text-sm md:text-base leading-relaxed list-disc list-inside">
+                          {intern.points.map((pt, pIdx) => (
+                            <li key={pIdx}>{pt}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </motion.div>
                 )}
 
@@ -221,16 +278,16 @@ const About = () => {
                   </motion.div>
                 )}
 
-                {activeTab === 'experience' && (
+                {activeTab === 'achievements' && (
                   <motion.div
-                    key="experience"
+                    key="achievements"
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -15 }}
                     transition={{ duration: 0.4 }}
                     className="space-y-8"
                   >
-                    {activitiesData.map((act, idx) => (
+                    {achievementsData.map((act, idx) => (
                       <div key={idx} className="relative pl-6 border-l-2 border-white/5 hover:border-[#00df9a]/40 transition-colors duration-300 group">
                         <div className="absolute -left-[6px] top-1.5 w-[10px] h-[10px] rounded-full bg-[#00df9a] group-hover:scale-125 transition-transform duration-300" />
                         <span className="text-xs font-semibold text-[#00df9a] tracking-wider uppercase bg-[#00df9a]/5 border border-[#00df9a]/20 px-2 py-0.5 rounded">
@@ -239,7 +296,7 @@ const About = () => {
                         <h4 className="text-xl font-bold text-white mt-2 mb-1 group-hover:text-[#00df9a] transition-colors duration-300">
                           {act.title}
                         </h4>
-                        <p className="text-sm font-medium text-gray-400 mb-2">
+                        <p className="text-sm font-medium text-[#00b8d4] mb-2">
                           {act.organization}
                         </p>
                         <p className="text-gray-400 font-light text-base leading-relaxed">
@@ -259,4 +316,3 @@ const About = () => {
 };
 
 export default About;
-

@@ -1,30 +1,42 @@
 {
   "Programming Languages": [
-    { "name": "C++", "level": 90 },
+    { "name": "C++", "level": 92 },
+    { "name": "Python", "level": 90 },
+    { "name": "Go", "level": 82 },
     { "name": "Java", "level": 80 },
-    { "name": "Python", "level": 85 },
-    { "name": "C", "level": 75 }
+    { "name": "JavaScript", "level": 88 },
+    { "name": "TypeScript", "level": 85 },
+    { "name": "SQL", "level": 85 },
+    { "name": "C", "level": 78 }
+  ],
+  "AI & Machine Learning": [
+    { "name": "PyTorch", "level": 85 },
+    { "name": "Deep Learning", "level": 82 },
+    { "name": "Local LLMs (Ollama / Transformers)", "level": 88 },
+    { "name": "Computer Vision", "level": 80 },
+    { "name": "Scikit-Learn", "level": 86 },
+    { "name": "Pandas", "level": 88 }
   ],
   "Web Development": [
-    { "name": "React", "level": 85 },
-    { "name": "JavaScript", "level": 88 },
-    { "name": "TypeScript", "level": 80 },
-    { "name": "Go", "level": 75 },
-    { "name": "HTML", "level": 95 },
-    { "name": "CSS", "level": 90 }
+    { "name": "React", "level": 88 },
+    { "name": "Node.js", "level": 82 },
+    { "name": "TypeScript", "level": 85 },
+    { "name": "RESTful APIs", "level": 88 },
+    { "name": "HTML5", "level": 95 },
+    { "name": "CSS3", "level": 90 }
   ],
   "Databases & Tools": [
+    { "name": "PostgreSQL", "level": 85 },
     { "name": "MySQL", "level": 85 },
-    { "name": "PostgreSQL", "level": 80 },
     { "name": "Git", "level": 88 },
     { "name": "GitHub", "level": 90 },
-    { "name": "XAMPP", "level": 80 },
-    { "name": "VS Code", "level": 90 }
+    { "name": "VS Code", "level": 92 },
+    { "name": "XAMPP", "level": 80 }
   ],
   "Core Competencies": [
-    { "name": "Data Structures & Algorithms (DSA)", "level": 85 },
-    { "name": "Object-Oriented Programming (OOP)", "level": 85 },
-    { "name": "Compiler Design", "level": 75 },
-    { "name": "Problem Solving", "level": 90 }
+    { "name": "Data Structures & Algorithms (DSA)", "level": 90 },
+    { "name": "Object-Oriented Programming (OOP)", "level": 88 },
+    { "name": "Database Systems", "level": 85 },
+    { "name": "Compiler Design", "level": 80 }
   ]
 }

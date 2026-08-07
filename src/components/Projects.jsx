@@ -22,7 +22,8 @@ const Projects = () => {
 
   const getCategoryIcon = (category) => {
     switch (category) {
-      case 'Data Science': return <FaBrain className="text-2xl text-[#00df9a]" />;
+      case 'AI & Machine Learning': return <FaBrain className="text-2xl text-[#00df9a]" />;
+      case 'Data Science': return <FaBrain className="text-2xl text-[#00b8d4]" />;
       case 'Full-Stack': return <FaServer className="text-2xl text-[#00df9a]" />;
       case 'Web Apps': return <FaLaptopCode className="text-2xl text-[#00b8d4]" />;
       case 'Systems': return <FaTerminal className="text-2xl text-[#a855f7]" />;

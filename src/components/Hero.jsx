@@ -5,10 +5,10 @@ import profilePic from '../images/me.jpeg';
 
 const Hero = () => {
   const roles = [
-    "Full-Stack Developer",
-    "Computer Science Student",
-    "Creative Problem Solver",
-    "Open Source Enthusiast"
+    "AI & Full-Stack Engineer",
+    "Local LLM & Systems Developer",
+    "Computer Science Undergraduate",
+    "RGB-T Vision & AI Researcher"
   ];
   
   const [roleIndex, setRoleIndex] = useState(0);
@@ -106,7 +106,7 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-base sm:text-lg md:text-xl text-gray-400 max-w-xl mb-10 leading-relaxed font-light"
           >
-            Engineering student at <span className="text-[#00df9a] font-medium">NMAMIT</span>, specializing in building high-performance full-stack web applications with modern architecture.
+            Computer Science & Engineering undergraduate at <span className="text-[#00df9a] font-medium">NMAMIT</span> with strong expertise in Data Structures, Algorithms, Full-Stack Web Development, Local LLMs, and AI Engineering.
           </motion.p>
 
           {/* CTA Buttons */}

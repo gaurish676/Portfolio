@@ -7,11 +7,7 @@ import {
   SiPython, 
   SiReact, 
   SiNodedotjs, 
-  SiExpress, 
-  SiMongodb, 
   SiPostgresql, 
-  SiDocker, 
-  SiAmazonaws, 
   SiGit,
   SiC,
   SiGo,
@@ -19,21 +15,22 @@ import {
   SiCss3,
   SiMysql,
   SiVisualstudiocode,
-  SiGithub
+  SiGithub,
+  SiPytorch,
+  SiPandas,
+  SiScikitlearn
 } from 'react-icons/si';
 import { 
   FaCode, 
   FaServer, 
-  FaSync, 
-  FaProjectDiagram, 
-  FaTerminal, 
-  FaLaptopCode,
   FaCoffee,
   FaBrain,
   FaCubes,
   FaCogs,
-  FaLightbulb,
-  FaDatabase
+  FaDatabase,
+  FaRobot,
+  FaEye,
+  FaLayerGroup
 } from 'react-icons/fa';
 
 // Map skill names to their corresponding icons
@@ -46,30 +43,28 @@ const getSkillIcon = (name) => {
     case 'C++': return <FaCode className="text-[#00599c]" />;
     case 'C': return <SiC className="text-[#a8b9cc]" />;
     case 'Go': return <SiGo className="text-[#00add8]" />;
-    case 'HTML': return <SiHtml5 className="text-[#e34f26]" />;
-    case 'CSS': return <SiCss3 className="text-[#1572b6]" />;
+    case 'SQL': return <FaDatabase className="text-[#336791]" />;
+    case 'HTML5': return <SiHtml5 className="text-[#e34f26]" />;
+    case 'CSS3': return <SiCss3 className="text-[#1572b6]" />;
     case 'React': return <SiReact className="text-[#61dafb] animate-spin-slow" />;
     case 'Node.js': return <SiNodedotjs className="text-[#339933]" />;
-    case 'Express': return <SiExpress className="text-gray-300" />;
-    case 'MongoDB': return <SiMongodb className="text-[#47a248]" />;
+    case 'RESTful APIs': return <FaServer className="text-[#00b8d4]" />;
+    case 'PyTorch': return <SiPytorch className="text-[#ee4c2c]" />;
+    case 'Deep Learning': return <FaBrain className="text-[#a855f7]" />;
+    case 'Local LLMs (Ollama / Transformers)': return <FaRobot className="text-[#00df9a]" />;
+    case 'Computer Vision': return <FaEye className="text-[#00b8d4]" />;
+    case 'Scikit-Learn': return <SiScikitlearn className="text-[#f7931e]" />;
+    case 'Pandas': return <SiPandas className="text-[#150458]" />;
     case 'MySQL': return <SiMysql className="text-[#4479a1]" />;
     case 'PostgreSQL': return <SiPostgresql className="text-[#4169e1]" />;
-    case 'Docker': return <SiDocker className="text-[#2496ed]" />;
-    case 'AWS': return <SiAmazonaws className="text-[#ff9900]" />;
     case 'Git': return <SiGit className="text-[#f05032]" />;
     case 'GitHub': return <SiGithub className="text-white" />;
     case 'VS Code': return <SiVisualstudiocode className="text-[#007acc]" />;
     case 'XAMPP': return <FaDatabase className="text-[#fb7a24]" />;
-    case 'Full-Stack Development': return <FaLaptopCode className="text-[#00df9a]" />;
-    case 'RESTful APIs': return <FaServer className="text-[#00b8d4]" />;
-    case 'Microservices': return <FaTerminal className="text-[#3b82f6]" />;
-    case 'CI/CD': return <FaSync className="text-[#a855f7]" />;
-    case 'Agile/Scrum': return <FaCode className="text-[#ec4899]" />;
-    case 'System Design': return <FaProjectDiagram className="text-[#f59e0b]" />;
     case 'Data Structures & Algorithms (DSA)': return <FaBrain className="text-[#00df9a]" />;
     case 'Object-Oriented Programming (OOP)': return <FaCubes className="text-[#00b8d4]" />;
+    case 'Database Systems': return <FaLayerGroup className="text-[#3b82f6]" />;
     case 'Compiler Design': return <FaCogs className="text-[#a855f7]" />;
-    case 'Problem Solving': return <FaLightbulb className="text-[#eab308]" />;
     default: return <FaCode className="text-gray-400" />;
   }
 };
@@ -121,7 +116,7 @@ const Skills = () => {
             <span className="gradient-text font-extrabold">Skills</span> & Expertise
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            A comprehensive outlook on programming languages, full-stack tools, and methodology expertise.
+            A comprehensive overview of programming languages, AI/ML frameworks, web development tools, and core competencies from my resume.
           </p>
         </motion.div>
 
@@ -137,7 +132,7 @@ const Skills = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-5 py-2.5 rounded-xl text-sm font-semibold tracking-wide transition-all duration-300 ${
+              className={`px-5 py-2.5 rounded-xl text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer ${
                 activeCategory === category
                   ? 'bg-gradient-to-r from-[#00df9a] to-[#00b8d4] text-black font-bold shadow-[0_0_20px_rgba(0,223,154,0.3)]'
                   : 'bg-white/5 border border-white/5 hover:border-white/10 hover:bg-white/10 text-gray-300'
@@ -204,4 +199,3 @@ const Skills = () => {
 };
 
 export default Skills;
-

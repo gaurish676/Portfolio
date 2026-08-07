@@ -1,38 +1,65 @@
 [
   {
     "id": 1,
-    "title": "CodSoft Data Science Internship Portfolio",
-    "description": "Comprehensive suite of 5 machine learning projects including Titanic Survival Prediction, Movie Rating Regression, Iris Classification, Sales Forecasting, and Credit Card Fraud Detection with SMOTE.",
+    "title": "Consent-Lens (Offline Permission & Consent Impact Analyzer)",
+    "description": "Architected an offline privacy and permission impact analyzer using local LLMs to evaluate app permissions and privacy terms without transmitting user data online. Engineered structured prompt pipelines and risk scoring algorithms.",
+    "category": "AI & Machine Learning",
+    "techStack": ["Python", "Local LLMs", "Ollama", "GenAI"],
+    "codeUrl": "https://github.com/gaurish676",
+    "demoUrl": "https://github.com/gaurish676"
+  },
+  {
+    "id": 2,
+    "title": "RGB-T Vision Portal (NITK Research)",
+    "description": "Designed and deployed an interactive web platform presenting thermal-visible computer vision research methodologies and datasets for NITK. Integrated PyTorch documentation, interactive simulations, and multi-modal vision datasets.",
+    "category": "AI & Machine Learning",
+    "techStack": ["PyTorch", "React", "Computer Vision", "Deep Learning", "JavaScript"],
+    "codeUrl": "https://github.com/gaurish676",
+    "demoUrl": "https://github.com/gaurish676"
+  },
+  {
+    "id": 3,
+    "title": "College Database System Engine",
+    "description": "Engineered a high-performance in-memory database engine in C++ utilizing custom data structures for student, faculty, and fee record management without external STL database wrappers. Implemented binary file persistence and custom search indexing.",
+    "category": "Systems",
+    "techStack": ["C++", "Custom Data Structures", "File I/O", "Indexing"],
+    "codeUrl": "https://github.com/gaurish676",
+    "demoUrl": "https://github.com/gaurish676"
+  },
+  {
+    "id": 4,
+    "title": "Intelligent Contact Management System",
+    "description": "Architected a full-stack contact management application using Go for high-concurrency backend services and React + TypeScript for a responsive interface. Designed relational PostgreSQL schemas with full-text search and soft-delete functionality.",
+    "category": "Full-Stack",
+    "techStack": ["Go", "React", "TypeScript", "PostgreSQL", "REST API"],
+    "codeUrl": "https://github.com/gaurish676",
+    "demoUrl": "https://github.com/gaurish676"
+  },
+  {
+    "id": 5,
+    "title": "Compiler for Hypothetical Language",
+    "description": "Built an SLR(1) parser and execution engine for a custom mini programming language, executing lexical analysis, parsing, and syntax evaluation. Computed FIRST/FOLLOW sets and constructed LR(0) state machines.",
+    "category": "Systems",
+    "techStack": ["Python", "Compiler Design", "LR Parsing", "Lexical Analysis"],
+    "codeUrl": "https://github.com/gaurish676",
+    "demoUrl": "https://github.com/gaurish676"
+  },
+  {
+    "id": 6,
+    "title": "Smart Insurance Cost Prediction",
+    "description": "Developed an end-to-end machine learning pipeline using Kaggle insurance datasets to predict health insurance premiums based on user attributes. Benchmarked Random Forest, KNN, and Linear Regression models.",
+    "category": "Data Science",
+    "techStack": ["Python", "Machine Learning", "Scikit-Learn", "Pandas"],
+    "codeUrl": "https://github.com/gaurish676",
+    "demoUrl": "https://github.com/gaurish676"
+  },
+  {
+    "id": 7,
+    "title": "CodSoft Data Science Portfolio",
+    "description": "Conducted data preprocessing, exploratory data analysis (EDA), and feature engineering on structured datasets. Implemented predictive machine learning models to analyze data patterns and evaluate algorithm performance.",
     "category": "Data Science",
     "techStack": ["Python", "Scikit-Learn", "Pandas", "SMOTE", "Matplotlib", "Seaborn"],
     "codeUrl": "https://github.com/gaurish676/CODSOFT",
     "demoUrl": "https://github.com/gaurish676/CODSOFT"
-  },
-  {
-    "id": 2,
-    "title": "Online Quiz Platform",
-    "description": "An interactive web portal for quiz testing with robust MySQL backend storage. Built-in statistics aggregation for question performance and score analysis.",
-    "category": "Full-Stack",
-    "techStack": ["JavaScript", "MySQL", "XAMPP", "HTML5", "CSS3"],
-    "codeUrl": "https://github.com/gaurish676/onlinequiz-",
-    "demoUrl": "https://github.com/gaurish676/onlinequiz-"
-  },
-  {
-    "id": 3,
-    "title": "Staffroom Finding & Resource Website",
-    "description": "A locator system built for NMAMIT students to find lecturer staffroom offices, incorporating database storage for academic reference papers and PYQs.",
-    "category": "Web Apps",
-    "techStack": ["VS Code", "MySQL", "JavaScript", "HTML5", "CSS3"],
-    "codeUrl": "https://github.com/gaurish676/Portfolio",
-    "demoUrl": "https://github.com/gaurish676/Portfolio"
-  },
-  {
-    "id": 4,
-    "title": "Compiler for Custom Language",
-    "description": "An SLR(1) parser and execution engine for a custom mini programming language, including lexical analysis, LR(0) compilation grids, and block execution.",
-    "category": "Systems",
-    "techStack": ["Python", "Compiler Design", "Algorithms", "Parser Table"],
-    "codeUrl": "https://github.com/gaurish676/Portfolio",
-    "demoUrl": "https://github.com/gaurish676/Portfolio"
   }
 ]
