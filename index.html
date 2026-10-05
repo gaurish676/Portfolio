@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaurish Bangera | Systems, Full-Stack & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Gaurish Bangera - CS Undergrad at NMAMIT specializing in Systems, Compilers, Go Backends, and Computer Vision." />
+  <!-- Google Fonts: Space Grotesk (Display) & JetBrains Mono (Code) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">gaurish.dev</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Stack</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#terminal" class="nav-link">Console</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="Gaurish_Bangera_NNM23CS078.pdf" target="_blank" class="btn btn-outline btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Resume PDF
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>B.Tech CS Undergrad @ NMAMIT • NITK Research Alum</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering scalable <span class="gradient-text">systems</span>, compiler engines & computer vision platforms.
+        </h1>
+
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Gaurish Bangera</strong>. I build high-concurrency Go backends, custom compiler parsers, and multi-modal computer vision applications. Driven by deep CS fundamentals and Clean Architecture.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            Explore Selected Projects
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="https://github.com/gaurish676" target="_blank" rel="noopener" class="btn btn-icon" title="GitHub">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/gaurish-bangera191a8831b" target="_blank" rel="noopener" class="btn btn-icon" title="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+
+        <!-- Quick Metrics Grid -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">NITK</span>
+            <span class="stat-label">RGB-T Vision Research</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">SLR(1)</span>
+            <span class="stat-label">Custom Language Parser</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Go + SQL</span>
+            <span class="stat-label">Concurrent Clean Architecture</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">AI-900</span>
+            <span class="stat-label">Azure AI Fundamentals Certified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // Background</span>
+          <h2 class="section-title">Foundations & Philosophy</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="lead-text">
+              I am a Computer Science & Engineering undergraduate at <strong>NMAM Institute of Technology</strong> (class of 2027), deeply enthusiastic about low-level software design, compilers, and production-grade web systems.
+            </p>
+            <p>
+              My focus lies where system architecture meets algorithmic rigor: crafting deterministic parsers, optimizing PostgreSQL query performance, deploying microservices in Go, and architecting interactive research visualization platforms for complex thermal-visible vision data.
+            </p>
+            <div class="highlights-list">
+              <div class="highlight-item">
+                <div class="h-icon">🎯</div>
+                <div>
+                  <strong>Deterministic & Efficient:</strong> Strong grounding in Data Structures, Algorithms, Compiler Design (LR state machines), and Object-Oriented principles.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="h-icon">⚡</div>
+                <div>
+                  <strong>Full-Stack Scalability:</strong> From concurrent Go backends to reactive TypeScript & React frontends.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="h-icon">🔬</div>
+                <div>
+                  <strong>Research & Machine Learning:</strong> Hands-on thermal-visible computer vision research at NITK and predictive modeling with Scikit-Learn.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="meta-card">
+              <h3 class="meta-card-title">Education & Focus</h3>
+              <div class="meta-row">
+                <span class="meta-label">Degree</span>
+                <span class="meta-value">B.Tech in Computer Science & Engineering</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Institution</span>
+                <span class="meta-value">NMAMIT, Nitte, Karkala</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">Expected May 2027</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Mangalore, Karnataka, India</span>
+              </div>
+              <div class="meta-divider"></div>
+              <h4 class="meta-subhead">Key Certifications</h4>
+              <ul class="badge-list">
+                <li class="pill-badge">Microsoft Azure AI-900</li>
+                <li class="pill-badge">Infosys C++ Professional</li>
+                <li class="pill-badge">Tudar Club Honor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // Core Competencies</span>
+          <h2 class="section-title">Technical Toolbelt</h2>
+          <p class="section-desc">Technologies, systems, and toolchains I work with regularly.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">&lt;&gt;</span>
+              <h3>Languages</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="tech-tag highlight">Go (Golang)</span>
+              <span class="tech-tag highlight">C++</span>
+              <span class="tech-tag highlight">Python</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Web & Backend -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">⚙️</span>
+              <h3>Web & Systems</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="tech-tag highlight">React.js</span>
+              <span class="tech-tag highlight">Node.js</span>
+              <span class="tech-tag">RESTful APIs</span>
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">HTML5 & Modern CSS3</span>
+              <span class="tech-tag">Concurrency</span>
+            </div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">🗄️</span>
+              <h3>Databases & DevOps</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="tech-tag highlight">PostgreSQL</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Git & GitHub</span>
+              <span class="tech-tag">Linux / Bash</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">XAMPP</span>
+            </div>
+          </div>
+
+          <!-- CS Foundations -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">🧠</span>
+              <h3>Theoretical CS</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="tech-tag highlight">Data Structures & Algo (DSA)</span>
+              <span class="tech-tag highlight">Compiler Design (SLR/LR)</span>
+              <span class="tech-tag">Object-Oriented Design (OOP)</span>
+              <span class="tech-tag">Machine Learning & Vision</span>
+              <span class="tech-tag">DBMS Internals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // Track Record</span>
+          <h2 class="section-title">Internships & Research</h2>
+          <p class="section-desc">Practical experience across academic research institutes and technology companies.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: NITK -->
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge research">Research</span>
+              <span class="timeline-date">2026</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Research Intern — RGB-T Vision Portal Project</h3>
+              <h4 class="timeline-company">NITK (National Institute of Technology Karnataka)</h4>
+              <ul class="timeline-bullets">
+                <li>Designed and developed the <strong>RGB-T Vision Portal</strong>, an interactive web platform presenting thermal-visible computer vision research, methodologies, and experimental findings.</li>
+                <li>Integrated research documentation, interactive simulations, multi-modal datasets, and project insights to streamline findings for researchers and academic collaborators.</li>
+                <li>Engineered responsive UI components using modern web technologies to visualize complex vision data and experimental workflow pipelines.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Computer Vision</span>
+                <span>Thermal-Visible Fusion</span>
+                <span>Web Visualization</span>
+                <span>Research Data</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: NativeSoftTech -->
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge industry">Industry</span>
+              <span class="timeline-date">Jun 2025 – Jul 2025</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Web Development Intern</h3>
+              <h4 class="timeline-company">NativeSoftTech</h4>
+              <ul class="timeline-bullets">
+                <li>Developed dynamic, responsive web interfaces and modular reusable UI components adhering strictly to modern HTML5, CSS3, and JavaScript standards.</li>
+                <li>Collaborated on client-facing frontend features, optimizing page layout responsiveness, cross-browser compatibility, and rendering performance.</li>
+                <li>Refactored legacy frontend code modules to enhance maintainability and boost user engagement metrics.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Frontend Architecture</span>
+                <span>JavaScript</span>
+                <span>UI Components</span>
+                <span>Performance Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: CodSoft -->
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge virtual">Data Science</span>
+              <span class="timeline-date">Jun 2025 – Jul 2025</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Data Science Virtual Intern</h3>
+              <h4 class="timeline-company">CodSoft</h4>
+              <ul class="timeline-bullets">
+                <li>Conducted thorough data preprocessing, exploratory data analysis (EDA), and feature engineering on diverse structured datasets.</li>
+                <li>Implemented predictive machine learning models to analyze multi-variable data patterns and evaluate algorithm performance using statistical metrics.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>EDA</span>
+                <span>Predictive Modeling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // Featured Engineering</span>
+          <h2 class="section-title">Projects & Systems</h2>
+          <p class="section-desc">Selected projects highlighting compiler theory, backend concurrency, and ML pipelines.</p>
+
+          <!-- Filter Controls -->
+          <div class="filter-bar" id="projectFilters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="systems">Systems & Compilers</button>
+            <button class="filter-btn" data-filter="backend">Backend & DB</button>
+            <button class="filter-btn" data-filter="ml">ML & Vision</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Project 1: Contact Management -->
+          <article class="project-card" data-category="backend systems web">
+            <div class="project-header">
+              <span class="project-badge">Full Stack & Go Concurrency</span>
+              <div class="project-actions">
+                <a href="https://github.com/gaurish676" target="_blank" rel="noopener" class="icon-link" title="Source Code">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Intelligent Contact Management System</h3>
+            <p class="project-desc">
+              High-concurrency full-stack contact manager designed around Clean Architecture in Go, with PostgreSQL relational optimization and a reactive React/TypeScript frontend.
+            </p>
+            <div class="project-features">
+              <span class="feature-item">✓ Go Goroutines & Concurrency</span>
+              <span class="feature-item">✓ Full-Text Search in PostgreSQL</span>
+              <span class="feature-item">✓ Soft-Delete & State Restoration</span>
+              <span class="feature-item">✓ Clean Architecture Modular APIs</span>
+            </div>
+            <div class="project-stack">
+              <span>Go</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>REST</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Compiler -->
+          <article class="project-card featured" data-category="systems">
+            <div class="project-header">
+              <span class="project-badge compiler">Compiler & Language Design</span>
+              <div class="project-actions">
+                <button class="interactive-preview-btn" onclick="runCompilerDemo()" title="Test in Interactive Console">
+                  <span>▶ Test in Console</span>
+                </button>
+              </div>
+            </div>
+            <h3 class="project-title">SLR(1) Compiler for Hypothetical Language</h3>
+            <p class="project-desc">
+              End-to-end SLR(1) parser and execution engine for a custom mini programming language. Implements lexical tokenization, FIRST/FOLLOW set derivation, LR(0) state machines, and AST execution.
+            </p>
+            <div class="project-features">
+              <span class="feature-item">✓ Automated FIRST & FOLLOW Computation</span>
+              <span class="feature-item">✓ Shift/Reduce Action & GOTO Table Construction</span>
+              <span class="feature-item">✓ Branching Conditionals (if/else) Runtime</span>
+              <span class="feature-item">✓ Dynamic Symbol Table & Expression Evaluation</span>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Compiler Design</span>
+              <span>LR Parsing</span>
+              <span>State Machines</span>
+              <span>Grammar</span>
+            </div>
+          </article>
+
+          <!-- Project 3: RGB-T Vision Portal (Research) -->
+          <article class="project-card" data-category="ml web">
+            <div class="project-header">
+              <span class="project-badge ml">NITK Computer Vision Research</span>
+            </div>
+            <h3 class="project-title">RGB-T Thermal-Visible Vision Portal</h3>
+            <p class="project-desc">
+              Interactive research portal built for the National Institute of Technology Karnataka to display, compare, and simulate multi-modal RGB and Thermal sensor datasets and target detection metrics.
+            </p>
+            <div class="project-features">
+              <span class="feature-item">✓ Multi-Modal Thermal vs RGB Visualization</span>
+              <span class="feature-item">✓ Interactive Vision Pipeline Simulation</span>
+              <span class="feature-item">✓ Research Benchmarks & Academic Documentation</span>
+            </div>
+            <div class="project-stack">
+              <span>Computer Vision</span>
+              <span>RGB-T Fusion</span>
+              <span>Data Viz</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Smart Insurance Cost Prediction -->
+          <article class="project-card" data-category="ml">
+            <div class="project-header">
+              <span class="project-badge ml">Machine Learning</span>
+            </div>
+            <h3 class="project-title">Smart Insurance Cost Prediction</h3>
+            <p class="project-desc">
+              End-to-end predictive machine learning model estimating healthcare insurance premiums. Compares Random Forest, K-Nearest Neighbors, and Linear Regression with robust R² / RMSE evaluation.
+            </p>
+            <div class="project-features">
+              <span class="feature-item">✓ Automated Feature Scaling & Encoding</span>
+              <span class="feature-item">✓ Benchmark Comparison across 3 Algorithms</span>
+              <span class="feature-item">✓ Deployed Inference Script for User Quotas</span>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+              <span>Pandas & NumPy</span>
+              <span>Regression</span>
+            </div>
+          </article>
+
+          <!-- Project 5: Online Quiz Platform -->
+          <article class="project-card" data-category="web backend">
+            <div class="project-header">
+              <span class="project-badge">Web Application</span>
+            </div>
+            <h3 class="project-title">Interactive Quiz & Assessment Platform</h3>
+            <p class="project-desc">
+              Assessment portal featuring customized quiz generation, real-time timer tracking, automated score calculation, and an administrative control panel with MySQL data analytics.
+            </p>
+            <div class="project-features">
+              <span class="feature-item">✓ Real-Time Timer & State Persistence</span>
+              <span class="feature-item">✓ Dynamic Question Bank Management</span>
+              <span class="feature-item">✓ Admin Analytics Panel & Score Reports</span>
+            </div>
+            <div class="project-stack">
+              <span>JavaScript</span>
+              <span>HTML5 / CSS3</span>
+              <span>MySQL</span>
+              <span>CRUD</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Campus Staffroom Navigator -->
+          <article class="project-card" data-category="web">
+            <div class="project-header">
+              <span class="project-badge">Campus Utility</span>
+            </div>
+            <h3 class="project-title">Staffroom & Academic Resource Navigator</h3>
+            <p class="project-desc">
+              Campus navigation platform assisting students in locating faculty staffrooms quickly, complete with a curated repository of Previous Year Questions (PYQs) for academic resource sharing.
+            </p>
+            <div class="project-features">
+              <span class="feature-item">✓ Campus Faculty Directory & Mapping</span>
+              <span class="feature-item">✓ Curated PYQ Document Archive</span>
+              <span class="feature-item">✓ Optimized Search Index for Swift Queries</span>
+            </div>
+            <div class="project-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Console Section -->
+    <section id="terminal" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 // Interactive Terminal</span>
+          <h2 class="section-title">Developer Console</h2>
+          <p class="section-desc">Experience Gaurish's work interactively. Type commands or click the quick action chips below.</p>
+        </div>
+
+        <div class="terminal-wrapper">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">gaurish@nmamit: ~/portfolio (sh)</div>
+            <button class="terminal-clear-btn" id="terminalClearBtn">Clear</button>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="term-line welcome-text">
+              Type <span class="term-cmd">help</span> to view available commands, or click any quick command below.
+            </div>
+            <div class="term-line">
+              <span class="term-prompt">gaurish@nmamit:~$</span> <span class="term-highlight">welcome</span>
+            </div>
+            <div class="term-line term-response">
+              Welcome to Gaurish Bangera's interactive portfolio console!<br>
+              Try: <span class="term-chip" onclick="executeCmd('skills')">skills</span> • <span class="term-chip" onclick="executeCmd('parser')">parser</span> • <span class="term-chip" onclick="executeCmd('experience')">experience</span> • <span class="term-chip" onclick="executeCmd('contact')">contact</span> • <span class="term-chip" onclick="executeCmd('resume')">resume</span>
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="term-prompt">gaurish@nmamit:~$</span>
+            <input type="text" id="terminalInput" placeholder="Try 'help', 'parser', 'skills', 'projects'..." autocomplete="off" spellcheck="false" />
+            <button id="terminalSubmit" class="term-submit-btn">Run</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06 // Connect</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-desc">Open for software engineering roles, research collaborations, and systems development.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out via email or connect on LinkedIn and GitHub. I respond promptly.</p>
+
+            <div class="contact-items">
+              <div class="c-item">
+                <div class="c-icon">📍</div>
+                <div>
+                  <span class="c-label">Location</span>
+                  <span class="c-val">Mangalore, Karnataka, India</span>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon">✉️</div>
+                <div>
+                  <span class="c-label">Email</span>
+                  <div class="email-copy-wrapper">
+                    <a href="mailto:gaurishbangera8970@gmail.com" class="c-val link">gaurishbangera8970@gmail.com</a>
+                    <button class="copy-btn" id="copyEmailBtn" title="Copy Email">
+                      <span id="copyText">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon">📞</div>
+                <div>
+                  <span class="c-label">Phone</span>
+                  <span class="c-val">+91 7204348970</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-row">
+              <a href="https://linkedin.com/in/gaurish-bangera191a8831b" target="_blank" rel="noopener" class="social-pill">
+                <span>LinkedIn</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="https://github.com/gaurish676" target="_blank" rel="noopener" class="social-pill">
+                <span>GitHub</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="Gaurish_Bangera_NNM23CS078.pdf" target="_blank" class="social-pill highlight">
+                <span>Download CV</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Message Form Column -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="senderName">Your Name</label>
+                <input type="text" id="senderName" required placeholder="Jane Doe" />
+              </div>
+              <div class="form-group">
+                <label for="senderEmail">Your Email</label>
+                <input type="email" id="senderEmail" required placeholder="jane@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="messageSubject">Subject</label>
+                <input type="text" id="messageSubject" required placeholder="Project Opportunity / Research Inquiry" />
+              </div>
+              <div class="form-group">
+                <label for="messageBody">Message</label>
+                <textarea id="messageBody" rows="4" required placeholder="Hi Gaurish, let's discuss..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Draft Message in Mail Client</span>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">gaurish.dev</span>
+        <p>© 2026 Gaurish Bangera. Designed with precision & craftsmanship.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
